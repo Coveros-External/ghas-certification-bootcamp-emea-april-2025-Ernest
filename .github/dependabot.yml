@@ -34,8 +34,8 @@ updates:
     labels:
       - "triage-required"
     assignees:
-      - "dungeonstechlead"
+      - "ernestliebeton"
     reviewers:
-      - "dragonsengineer"
+      - "ernestliebeton"
     commit-message:
       prefix: "pip"
