@@ -4,3 +4,4 @@ secret_text
 
 
 password
+secret scanning test: password
