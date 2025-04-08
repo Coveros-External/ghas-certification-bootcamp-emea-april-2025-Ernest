@@ -25,3 +25,19 @@ updates:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
+        
+# Enable version updates for pip
+  - package-ecosystem: "pip"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/authn-service"
+    # Check the npm registry for updates every week
+    schedule:
+      interval: "daily"
+    labels:
+      - "triage-required"
+    assignees:
+      - "dungeonstechlead"
+    reviewers:
+      - "ErnestLiebeton"
+    commit-message:
+      prefix: "pip"
