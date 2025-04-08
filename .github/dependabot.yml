@@ -28,9 +28,7 @@ updates:
         
 # Enable version updates for pip
   - package-ecosystem: "pip"
-    # Look for `package.json` and `lock` files in the `root` directory
     directory: "/authn-service"
-    # Check the npm registry for updates every week
     schedule:
       interval: "daily"
     labels:
@@ -38,6 +36,6 @@ updates:
     assignees:
       - "dungeonstechlead"
     reviewers:
-      - "ErnestLiebeton"
+      - "dragonsengineer"
     commit-message:
       prefix: "pip"
