@@ -100,11 +100,13 @@ jobs:
         echo '  make release'
         exit 1
 
-    - if: matrix.language == 'java-kotlin'
-      run: |
-        echo "java version"
-        java --version
-
+    - name: Set Up Java JDK
+      if: matrix.language == 'java-kotlin'
+      uses: actions/setup-java@v3
+      with:
+        java-version: 18
+        distribution: 'oracle'
+          
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
