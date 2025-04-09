@@ -7,7 +7,7 @@
   from: codeql-python
 - import: codeql-suites/go-code-scanning.qls
   from: codeql-go
-import: codeql-suites/actions-code-scanning.qls
+- import: codeql-suites/actions-code-scanning.qls
   from: codeql-actions
 - exclude:
     id:
