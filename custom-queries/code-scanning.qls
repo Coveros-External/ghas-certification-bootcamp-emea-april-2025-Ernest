@@ -7,8 +7,8 @@
   from: codeql-python
 - import: codeql-suites/go-code-scanning.qls
   from: codeql-go
-- import: codeql-suites/github/code-scanning.qls
-  from: codeql
+- import: codeql-suites/actions-code-scanning.qls
+  from: codeql-actions
 - exclude:
     id:
     - java/unsafe-deserialization
