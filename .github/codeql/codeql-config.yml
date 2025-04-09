@@ -1,8 +1,8 @@
-name: "My CodeQL config"
+name: "My CodeQL Config"
 
-disable-default-queries: true
+disable-default-queries: false
 
 queries:
-    - uses: security-and-quality
-    - uses: ./custom-queries/code-scanning.qls
-    - uses: ./custom-queries/go/jwt.ql
+  - name: go-custom-queries
+    uses: {owner}/{repository}/<path-to-query>@<some-branch>
+  - uses: security-and-quality
